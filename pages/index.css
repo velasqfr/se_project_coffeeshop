@@ -2,7 +2,7 @@
   min-width: 1100px;
   max-width: 1600px;
   margin: 0 auto;
-  font-family: Inter, Arial, sans-serif;
+  font-family: "Inter", Arial, sans-serif;
   font-size: 16px;
   line-height: 20px;
 }
@@ -28,7 +28,7 @@
 
 .header__title {
   margin: 183px 0 0; /*We are removing the margin and padding, defualting it to zero*/
-  font-family: Inter, Arial, sans-serif; /*Always had the fallback font style even if it is not mentioned in the brief*/
+  font-family: "Inter", Arial, sans-serif; /*Always had the fallback font style even if it is not mentioned in the brief*/
   font-style: normal;
   font-weight: 500;
   font-size: 60px;
@@ -40,7 +40,7 @@
 .header__span-accent {
   color: #3f96f3;
   display: block;
-  font-family: Noto serif, Times New Roman, serif;
+  font-family: "Noto serif", Times New Roman, serif;
   font-style: italic;
   font-weight: normal;
   font-size: 60px;
@@ -49,7 +49,7 @@
 
 .header__description {
   margin: 28px 0 0; /*We are removing the margin and padding, defualting it to zero*/
-  font-family: Noto Serif, Times New Roman, serif; /*Again use the fallback fonts*/
+  font-family: "Noto Serif", Times New Roman, serif; /*Again use the fallback fonts*/
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -62,7 +62,7 @@
   margin-top: auto;
   display: flex;
   justify-content: space-between;
-  font-family: Inter Arial, sans-serif;
+  font-family: "Inter", Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -96,7 +96,7 @@
   gap: 20px;
   padding: 0; /* In general, you will always want to remove the default padding and margin , by either setting it to 0 or an appropriate value */
   margin: 0;
-  font-family: Inter Arial, sans-serif;
+  font-family: "Inter", Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -122,7 +122,7 @@
   max-width: 580px;
   gap: 80px;
   margin-top: 100px;
-  font-family: Inter Arial, sans-serif;
+  font-family: "Inter", Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 44px;
@@ -135,7 +135,7 @@
   gap: 80px;
   color: #fff;
   margin-top: 24px;
-  font-family: Noto Serif Times New Roman, serif;
+  font-family: "Noto Serif", Times New Roman, serif;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -158,7 +158,7 @@
 .recipes__videos-caption {
   display: flex;
   justify-content: space-between;
-  font-family: Inter Arial, sans-serif;
+  font-family: "Inter", Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
