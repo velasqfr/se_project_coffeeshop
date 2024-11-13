@@ -6,3 +6,175 @@
   font-size: 16px;
   line-height: 20px;
 }
+
+.header {
+  padding: 30px 80px 40px;
+  height: 800px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  background-image: url(../images/background_header.svg);
+  position: relative;
+  background-size: cover;
+}
+
+.header__image {
+  position: absolute;
+  top: 124px;
+  right: 5px;
+  width: 646px;
+  height: 568px;
+}
+
+.header__title {
+  margin: 183px 0 0; /*We are removing the margin and padding, defualting it to zero*/
+  font-family: "Inter", "Arial", sans-serif; /*Always had the fallback font style even if it is not mentioned in the brief*/
+  font-style: normal;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 72px;
+  letter-spacing: -0.6px;
+  max-width: 729px;
+}
+
+.header__span-accent {
+  color: #3f96f3;
+  display: block;
+  font-family: "Noto Serif", "Times New Roman", serif;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 60px;
+  line-height: 72px;
+}
+
+.header__description {
+  margin: 28px 0 0; /*We are removing the margin and padding, defualting it to zero*/
+  font-family: "Noto Serif", "Times New Roman", serif; /*Again use the fallback fonts*/
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  margin-top: 28px;
+  max-width: 683px;
+}
+
+.header__footer {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Inter" "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #6f6f6f;
+  gap: 80px;
+  margin-bottom: -40px;
+}
+
+.header__paragraph {
+  margin: 0;
+  gap: 80px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__logo {
+  position: relative;
+  left: -50px;
+  gap: 30px;
+  width: 105px;
+  height: 39px;
+}
+
+.nav__links {
+  display: flex;
+  list-style-type: none;
+  gap: 20px;
+  padding: 0; /* In general, you will always want to remove the default padding and margin , by either setting it to 0 or an appropriate value */
+  margin: 0;
+  font-family: "Inter" "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.nav__links:hover {
+  cursor: pointer;
+}
+
+.recipes {
+  color: #fff;
+  background-color: #0a2750;
+  padding: 100px 80px 215px;
+  overflow: visible;
+  background-image: url(../images/background_recipes.svg);
+  position: relative;
+  background-size: cover;
+}
+
+.recipes__title {
+  margin: 0 0 24px;
+  max-width: 580px;
+  gap: 80px;
+  margin-top: 100px;
+  font-family: "Inter" "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 52px;
+}
+
+.recipes_subtitle {
+  margin: 0 0 80px;
+  max-width: 438px;
+  gap: 80px;
+  color: #fff;
+  margin-top: 24px;
+  font-family: "Noto Serif" "Times New Roman", serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.recipes__videos {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  list-style-type: none;
+}
+
+.recipes__video-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.recipes__videos-caption {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Inter" "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  margin-top: 10px;
+  text-align: center;
+  color: #fff;
+}
+
+.recipes_video-item {
+  width: 480px;
+}
+
+.recipes__iframe {
+  display: block;
+  width: 100;
+  height: 270px;
+  border: none;
+}
