@@ -168,13 +168,11 @@
   color: #fff;
 }
 
-.recipes_video-item {
+.recipes__video-item {
   width: 480px;
 }
 
 .recipes__iframe {
   display: block;
-  width: 100px;
-  height: 270px;
   border: none;
 }
