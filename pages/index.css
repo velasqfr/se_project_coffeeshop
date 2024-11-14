@@ -40,7 +40,7 @@
 .header__span-accent {
   color: #3f96f3;
   display: block;
-  font-family: "Noto serif", Times New Roman, serif;
+  font-family: "Noto serif", "Times New Roman", serif;
   font-style: italic;
   font-weight: normal;
   font-size: 60px;
@@ -49,7 +49,7 @@
 
 .header__description {
   margin: 28px 0 0; /*We are removing the margin and padding, defualting it to zero*/
-  font-family: "Noto Serif", Times New Roman, serif; /*Again use the fallback fonts*/
+  font-family: "Noto Serif", "Times New Roman", serif; /*Again use the fallback fonts*/
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -135,7 +135,7 @@
   gap: 80px;
   color: #fff;
   margin-top: 24px;
-  font-family: "Noto Serif", Times New Roman, serif;
+  font-family: "Noto Serif", "Times New Roman", serif;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -236,12 +236,12 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
-  background-color: rgb(47, 128, 237);
+  background-color: #1878dc;
   color: #fff;
 }
 
 .form__button:hover {
-  background-color: rgba(47, 128, 237 0.7);
+  background-color: #1878dc;
   cursor: pointer;
 }
 
