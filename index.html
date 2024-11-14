@@ -98,10 +98,65 @@
           </ul>
         </section>
         <section id="table" class="reservations"></section>
+        <h2 class="reservation__title">Book a table</h2>
+        <form class="reservation__form form">
+          <!--a mix just means 2 BEM classes are used on the same class and it would be a block and an element of a parent block or an element and another element. We are not using modifiers-->
+          <fieldset class="form__fieldset">
+            <label for="name-input" class="form__label">
+              <!--anytime you have a label and input pair they should be associated using the "for" attributes of the label and the "id" attribute of the input, that helps with accesibility and other things-->
+              Name *
+              <input
+                class="form__input"
+                id="name-input"
+                type="text"
+                placeholder="Name Surname"
+                required
+              />
+            </label>
+            <label for="guest-input" class="form__label">
+              Number of guests *
+              <input
+                class="form__input"
+                id="guest-input"
+                type="number"
+                min="1"
+                max="8"
+                placeholder="1-8"
+                required
+              />
+            </label>
+            <label for="date-input" class="form__label">
+              Date & time *
+              <input
+                class="form__input"
+                id="date-input"
+                type="datetime-local"
+                required
+              />
+            </label>
+            <label for="email-input" class="form__label">
+              Your email *
+              <input
+                class="form__input"
+                id="email-input"
+                type="email"
+                placeholder="email@email.com"
+                required
+              />
+            </label>
+          </fieldset>
+          <button class="form__button">Book a table</button>
+          <label for="" class="form__label form__label_type_checkbox">
+            <input class="form__checkbox" type="checkbox" />
+            I agree with the terms of use
+          </label>
+        </form>
         <section id="menu" class="menu"></section>
         <section class="about"></section>
       </main>
-      <footer id="contacts" class="footer"></footer>
+      <footer id="contacts" class="footer">
+        <p class="footer__copyright">&copy; 2024 Franklin Velasquez</p>
+      </footer>
     </div>
   </body>
 </html>

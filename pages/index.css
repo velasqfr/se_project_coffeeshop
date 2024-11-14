@@ -176,3 +176,109 @@
   display: block;
   border: none;
 }
+
+.reservation {
+  padding: 100px 0 120px; /* 100 on top, 0 on the sides, and 120 on the bottom */
+  background-image: url(../images/background_reservation.svg);
+}
+
+.reservation__title {
+  margin: 0 0 80px; /* the 0 0 will remove the top margin because there is 100px + an addition 20 from the header - book a table */
+  text-align: center;
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 52px;
+}
+
+.reservation__form {
+  margin: 0 auto; /* We can't apply margin to the form block but we can apply to the reservation form element. We could also turn the parent into a flex container with flex direction collum and center the elements */
+}
+
+.form {
+  max-width: 385px;
+}
+
+.form__fieldset {
+  /* the fieldset has some padding,margin, and a border )border style groove). These are things we need to reset just like the top margin */
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-image: url(../images/background_reservation.svg);
+}
+
+.form__input {
+  display: block; /* By applying display: block we will put the name, email, date time, and guest will appear below the text nodes, instead of alligned with them */
+  width: 100%;
+  padding: 15px 20px; /*per instructions */
+  box-sizing: border-box;
+  margin: 8px 0 32px; /* top 8px, left and right 0, 32 for bottom */
+  border: 1px solid #838383; /* per instructions */
+  border-radius: 4px;
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  color: #838383;
+  cursor: pointer;
+}
+
+.form__button {
+  width: 100%;
+  border: none;
+  padding: 20px 0; /*top and bottom 20, left and right 0 */
+  border-radius: 4px;
+  margin-bottom: 32px;
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  background-color: rgb(47, 128, 237);
+  color: #fff;
+}
+
+.form__button:hover {
+  background-color: rgba(47, 128, 237 0.7);
+  cursor: pointer;
+}
+
+.form__checkbox {
+  border-radius: 2px;
+  width: 20px;
+  height: 20px;
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.form__label_type_checkbox {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.content {
+  background-color: #d9e7ff;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.form__label {
+  margin-bottom: 32px;
+  display: block;
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.footer__copyright {
+  margin-left: 1300px;
+}
