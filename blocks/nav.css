@@ -1,0 +1,36 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__logo {
+  position: relative;
+  left: -50px;
+  gap: 30px;
+  width: 105px;
+  height: 39px;
+}
+
+.nav__links {
+  display: flex;
+  list-style-type: none;
+  gap: 20px;
+  padding: 0; /* In general, you will always want to remove the default padding and margin , by either setting it to 0 or an appropriate value */
+  margin: 0;
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.nav__link {
+  color: #000;
+  text-decoration: none;
+  transition: opacity 1s; /*After setting the opacity in the nav__link:hover, we add this style to have the opacity transition a bit slower for style */
+}
+
+.nav__link:hover {
+  cursor: pointer;
+  opacity: 50%; /*Per brief (changes the text and makes it go light when hovered over*/
+}

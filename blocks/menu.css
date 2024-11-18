@@ -1,0 +1,47 @@
+.menu {
+  padding: 100px 0;
+  background-color: #fff;
+  background-image: url(../images/background_menu.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*These steps will center all the elements, and is the better way to center multiple elements */
+  display: flex; /* Parent turns into a flex container */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.menu__title {
+  margin: 0 0 24px; /*Right is o, 24px is the bottom */
+  max-width: 780px;
+  font-family: "Inter", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 52px;
+  text-align: center;
+}
+
+.menu__subtitle {
+  margin: 0 0 100px; /* 0 all around, besides the bottom is 100px */
+  max-width: 780px;
+  align-items: center;
+  font-family: "Noto Serif", "Times New Roman", serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.menu__cards {
+  margin: 0; /* We don't need any top or margin bottom so we should set the outter list margin to 0 */
+  padding: 0; /* There is extra padding on the left you need to remove */
+  list-style-type: none; /* Will take care of removing the bulltet points */
+  display: flex;
+  flex-wrap: wrap; /*With flex wrap elements will only wrap to a new row if they need to, and in this case they don't need to*/
+  gap: 100px; /*Stated on the brief */
+  /*steps to center the menu cards*/
+  justify-content: center;
+}

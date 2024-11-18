@@ -1,0 +1,37 @@
+.card {
+  width: 540px; /*Stated in the brief and this will shift things according to the brief instructions */
+}
+
+.card__list {
+  padding: 0; /* Ul have paddings by default so you have to ensure whenever you set uls in your html to remove the padding like you did in the menu cards. This will shift the menut items to the left under the appropriate menu title element */
+  margin: 0; /*We don't want the extra default margins, this will remove it */
+  /* Steps to add 16px between each listed menu item. We should first convert the list containing the elements into a flex box to better set the rule*/
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.card__list-item {
+  display: flex; /* After applying this we don't see the normal change behavior of collummn to row so we need to do the next step */
+  gap: 10px; /* If you want space between elements use gap. We estimate 10px that'll give the little spacing between the menu item and the lining added */
+  padding: 0; /* Ul have paddings by default so you have to ensure whenever you set uls in your html to remove the padding like you did in the menu cards */
+  font-family: "Noto Serif", "Times New Roman", serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.card__list-divider {
+  flex-grow: 1; /* Working with the span tag, putting flex-grow helps control the spacing and will shift the pricing. The default value (no spacing) is 0 and the the more value, the more extra space you will give */
+  border-bottom: 1px solid black; /* this wll give the black underlining covering the space */
+}
+
+.card__title {
+  margin: 0 0 32px; /* this will set the top margin to 0 and bottom margin 32px (per brief) */
+  font-family: "Inter", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 30px;
+}

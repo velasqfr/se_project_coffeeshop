@@ -1,0 +1,18 @@
+.reservation {
+  padding: 100px 0 120px; /* 100 on top, 0 on the sides, and 120 on the bottom */
+  background-image: url(../images/background_reservation.svg);
+}
+
+.reservation__title {
+  margin: 0 0 80px; /* the 0 0 will remove the top margin because there is 100px + an addition 20 from the header - book a table */
+  text-align: center;
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 52px;
+}
+
+.reservation__form {
+  margin: 0 auto; /* We can't apply margin to the form block but we can apply to the reservation form element. We could also turn the parent into a flex container with flex direction collum and center the elements */
+}

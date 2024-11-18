@@ -1,0 +1,70 @@
+.header {
+  padding: 30px 80px 40px;
+  height: 800px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  background-image: url(../images/background_header.svg);
+  position: relative;
+  background-size: cover;
+}
+
+.header__image {
+  /* header__image is not a block because it has underscores. It is an element of the block "header" and should therefore put the styles in the same file of the styles for "header" */
+  position: absolute;
+  top: 124px;
+  right: 5px;
+  width: 646px;
+  height: 568px;
+}
+
+.header__title {
+  margin: 183px 0 0; /*We are removing the margin and padding, defualting it to zero*/
+  font-family: "Inter", Arial, sans-serif; /*Always had the fallback font style even if it is not mentioned in the brief*/
+  font-style: normal;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 72px;
+  letter-spacing: -0.6px;
+  max-width: 729px;
+}
+
+.header__span-accent {
+  color: #3f96f3;
+  display: block;
+  font-family: "Noto serif", "Times New Roman", serif;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 60px;
+  line-height: 72px;
+}
+
+.header__description {
+  margin: 28px 0 0; /*We are removing the margin and padding, defualting it to zero*/
+  font-family: "Noto Serif", "Times New Roman", serif; /*Again use the fallback fonts*/
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  margin-top: 28px;
+  max-width: 683px;
+}
+
+.header__footer {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #6f6f6f;
+  gap: 80px;
+  margin-bottom: -40px;
+}
+
+.header__paragraph {
+  margin: 0;
+  gap: 80px;
+}

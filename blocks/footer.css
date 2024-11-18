@@ -1,0 +1,73 @@
+.footer {
+  /*This was given in the brief*/
+  background: linear-gradient(180deg, #0a2850 0%, #071931 100%);
+  color: #fff;
+  font-family: "Inter", Arial, sans-serif;
+  padding: 60px 80px; /*60px on the bottom and top and 80px on the right and left per brief*/
+}
+
+.footer__logo {
+  width: 105px; /*per brief*/
+  height: 39px; /*per brief*/
+}
+
+.footer__column-heading {
+  margin: 0 0 20px; /*Gets rid of the padding*/
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.footer__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer__social-link {
+  color: #fff; /*This will change the color of the links*/
+  text-decoration: none;
+  /*This is to align the text straight*/
+  display: flex;
+  align-items: center;
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  /*After setting the opacity in the footer__social-linkhover, we add this style because I chose to do timing-function property */
+  transition-property: opacity; /* Specifies the property to transition */
+  transition-duration: 1s; /* Specifies the duration of the transition */
+  transition-timing-function: ease-in-out; /* Controls the pace of the transition */
+}
+
+.footer__social-link:hover {
+  cursor: pointer;
+  opacity: 70%; /*Per brief (changes the text and makes it go light when hovered over*/
+}
+
+.footer__social-icon {
+  /*Per brief*/
+  width: 16px;
+  height: 16px;
+  margin-right: 10px; /* This is for the text pixel in between the text and icon */
+}
+
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__copyright {
+  margin: 108px 0 0; /*108px on top and rest set to 0*/
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+}

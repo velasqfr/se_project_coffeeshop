@@ -1,0 +1,76 @@
+.form {
+  max-width: 385px;
+}
+
+.form__fieldset {
+  /* the fieldset has some padding,margin, and a border )border style groove). These are things we need to reset just like the top margin */
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.form__input {
+  display: block; /* By applying display: block we will put the name, email, date time, and guest will appear below the text nodes, instead of alligned with them */
+  width: 100%;
+  padding: 15px 20px; /*per instructions */
+  box-sizing: border-box;
+  margin: 8px 0 32px; /* top 8px, left and right 0, 32 for bottom */
+  border: 1px solid #838383; /* per instructions */
+  border-radius: 4px;
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  color: #838383;
+  cursor: pointer;
+}
+
+.form__button {
+  width: 100%;
+  border: none;
+  padding: 20px 0; /*top and bottom 20, left and right 0 */
+  border-radius: 4px;
+  margin-bottom: 32px;
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  background-color: #1878dc;
+  color: #fff;
+  transition: background-color 0.5s; /* After setting the hover background-color, we'd like to style it with the transition property.
+                                    First say the property you want to transition (in this case background-color) then the duration (0.5s) and this will style up speed and smoothe out the effect once hovered over */
+}
+
+.form__button:hover {
+  background-color: #3f96f3; /*This will change the shade of blue color once hovered over*/
+  cursor: pointer;
+}
+
+.form__checkbox {
+  border-radius: 2px;
+  width: 20px;
+  height: 20px;
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.form__label_type_checkbox {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.form__label {
+  margin-bottom: 32px;
+  display: block;
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}

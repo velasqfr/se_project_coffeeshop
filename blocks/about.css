@@ -1,0 +1,75 @@
+.about {
+  background-color: #0a2850;
+  color: #fff;
+  /*Padding will be 100px on the top, 80px on the left and right, anf 173px in the bottom*/
+  padding: 100px 80px 173px;
+  display: flex; /*Once again this will turn the collumn into a row, shifting the paragraphs next to the title */
+  justify-content: space-between; /*This creates space between elements */
+  font-family: "Inter", Arial, sans-serif; /*We moved it from the about__title to the parent block so that it will aply to all the elements and not worry about inputing it indivudually in each element that has the same font-family style*/
+  position: relative; /*To correct the circle and shift it back down the the about section,  you need to give the parent element a non default position value (about element)*/
+  overflow: hidden; /* It clps off anything from a child element that extends beyond the parent. In this case it cutts off the cicle extending outsie the about section*/
+  z-index: 0; /* This will put the circle behind the text, with the z-index: -1 on about__circle class*/
+}
+
+.about__title {
+  max-width: 251px;
+  /*font-style: normal; this was part of the brief but because we put the font-family style in the about, we don't need it anymore since it is the default */
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 52px;
+  margin: 0; /* We are roomiving all extra margin by defaulting it to 0 */
+}
+
+.about__content {
+  max-width: 660px;
+  margin: 0; /* We are roomiving all extra margin by defaulting it to 0 */
+  margin: 19px 0 0; /*We are adding 19px because we need space between each lininng paragraph and a little above the first line paragraph (0 0 will remove the extra margin on left and right*/
+  /* Steps to now add the spacing between the text lining pargraphs. We want to use gap but to use gap we need to turn it into a flex container */
+  display: flex;
+  flex-direction: column; /*to fix the column after applying display:flex */
+  gap: 20px; /* Now we can add gap (20px per brief) but remember to use the steps above before using gap */
+}
+
+.about__paragraph {
+  font-family: "Noto Serif", "Times New Roman", serif;
+  /*font-style: normal;
+  font-weight: normal;  these were part of the brief can be deleted because we don't need them because it is the default*/
+  font-size: 20px;
+  line-height: 30px;
+  margin: 0; /* We are roomiving all extra margin by defaulting it to 0 */
+}
+
+.about__circle {
+  /*There is an additional space on the side because there are three elements in the flex contatiner (we can't see it because it is an empty div. Therefore, we should use absolution:positon to pull the div out of the document flow so that the flex contatiner will pretend it is not there. */
+  position: absolute;
+  /*Steps to create the circle through CSS */
+  background-color: #1878dc;
+  border-radius: 50%; /*(per brief)*/
+  width: 426px;
+  height: 426px; /*By now you should have a circle */
+  top: -152px; /* We need to move the circle so that it is outside of the element it is starting, so we need to use negative values (the ones presented in the brief) */
+  /* When the browser encounters an absolutely positioned element it checks the parent element that, that, that element is inside, (the "about" element" is the parent element).
+  Therefore it looks and checks to see if the elelment has a non default positioned value. It checks all elelements (main class, div, body, etc. to any that has a position value (relative,absolute,etc.) and if it does not find it, it positions that element in respect to the browser window, which is why the circle shifted all the way up*/
+  /*To correct that you need to give the parent element a non default position value (about element) done above*/
+  left: -129px; /*Circle is now  shifted back in the bottom but needs to move to the left which again we use a negative value (value given in brief */
+  z-index: -1; /*This will put the circle behind the text, with the z-index: 0 on about class*/
+}
+
+.about__circle_animation_blurred {
+  animation: pulsate 1.3s ease-in-out 0s infinite; /* Pulsate is the key value wwe use per brief, 1.3s is given, timing ease-in-out is given, 0s is for the animation delay and the infinite value is for the animation-iteration-count*/
+}
+
+@keyframes pulsate {
+  0% {
+    opacity: 1; /*opacity makes it visible, 0 will make it invisible*/
+  }
+
+  50% {
+    opacity: 0.6;
+  }
+
+  100% {
+    opacity: 0; /*This will make it invisible again */
+    transform: scale(1.3); /*Tells us to put a value between 1 and 1.5*/
+  }
+}
