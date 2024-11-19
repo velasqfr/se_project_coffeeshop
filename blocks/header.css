@@ -60,11 +60,11 @@
   font-size: 16px;
   line-height: 20px;
   color: #6f6f6f;
-  gap: 80px;
-  margin-bottom: -40px;
+  gap: 40px;
+
+  align-items: flex-end; /*sticks the text to the bottom of the header footer*/
 }
 
 .header__paragraph {
   margin: 0;
-  gap: 80px;
 }
